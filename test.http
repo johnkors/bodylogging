@@ -1,0 +1,30 @@
+POST http://localhost:5145
+Content-Type: text/plain
+
+some text
+
+###
+POST http://localhost:5145/httpbin/post
+Content-Type: application/json
+
+{ "test" : "httpbin" }
+
+###
+POST http://localhost:5145/httpstatus/200
+Content-Type: application/json
+
+{ "test" : "httpstatus" }
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{ "test" : "yolo123" }
+
+###
+
+POST https://httpstat.us/200
+Content-Type: application/json
+
+{ "test" : "yolo123" }
